@@ -6,12 +6,9 @@ import torch.nn.functional as F
 import torch.nn as nn
 import warnings
 import math
-import time
-from model import TestModel2, TestModel
+from model import TestModel
 from torch.optim import Adam
-from sklearn.cluster import KMeans
 from evaluation import eva
-from sklearn import metrics
 import random
 import numpy as np
 
@@ -123,4 +120,3 @@ def train(args):
     print(
         f'best  acc: {retScore[0]:.4f}, nmi: {retScore[1]:.4f}, ari: {retScore[2]:.4f}, f1: {retScore[3]:.4f}'
     )
->>>>>>> 3695aa0d5f1ff49ddeae83ed76f104d5baaf29b7

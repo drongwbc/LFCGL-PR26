@@ -1,10 +1,8 @@
 import torch
 import utils
-import numpy as np
 import torch.nn as nn
 import torch.nn.functional as F
 from sklearn.preprocessing import normalize
-from sklearn.cluster import KMeans
 
 
 class TestModel(nn.Module):
@@ -73,6 +71,3 @@ class TestModel(nn.Module):
             A_rec.append(utils.graph_normalize(tmp))
 
         return Z, S, G, A_rec, P
-
-        return Z, S, G, A_rec, P
->>>>>>> 3695aa0d5f1ff49ddeae83ed76f104d5baaf29b7

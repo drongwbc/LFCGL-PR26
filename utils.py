@@ -221,6 +221,3 @@ def GCL(z, S):
         GCL -= torch.sum(intra_dis) / other_points.shape[0]
 
     return GCL
-
-    return GCL
->>>>>>> 3695aa0d5f1ff49ddeae83ed76f104d5baaf29b7
